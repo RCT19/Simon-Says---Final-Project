@@ -328,16 +328,20 @@ void loop(){
     delay(500);
     digitalWrite(led, HIGH);
     digitalWrite(led3, HIGH);
+    tone(buzzer, 500);
     delay(500);
     digitalWrite(led, LOW);
     digitalWrite(led3, LOW);
+    noTone(buzzer);
     delay(500);
     digitalWrite(led2, HIGH);
+    tone(buzzer, 500);
     delay(500);
     digitalWrite(led2, LOW);
+    noTone(buzzer);
     level = 1;
-    lives = 3;
-    delay(500); 
+    lives = 3; 
+    delay(500);
   } //end lives = 0 if
 //this if statement is responsible for testing if the value of lives is equal to zero. If the value of lives is equal
 //to zero then the game displays a distinct light pattern that indicates to the user that the game is over because they
@@ -408,5 +412,3 @@ void loop(){
 //completed 20 rounds the program will play the Star War theme song five times. After five times, the program resets
 //the game by reseting the value of level to zero and lives to three. 
 } //end loop
-//I referenced the website: "https://circuits.io/circuits/1542469-music-with-arduino-star-wars-theme-song" for the Star Wars theme song
-//code snippit and adapted it to this code.
