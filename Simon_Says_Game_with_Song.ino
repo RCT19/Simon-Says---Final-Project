@@ -411,4 +411,6 @@ void loop(){
 //this part of the code is responsible for the victory song of the code. When the program detects that the user
 //completed 20 rounds the program will play the Star War theme song five times. After five times, the program resets
 //the game by reseting the value of level to zero and lives to three. 
+//I referenced the website: "https://circuits.io/circuits/1542469-music-with-arduino-star-wars-theme-song" for the Star Wars theme song
+//code snippit and adapted it to this code.
 } //end loop
